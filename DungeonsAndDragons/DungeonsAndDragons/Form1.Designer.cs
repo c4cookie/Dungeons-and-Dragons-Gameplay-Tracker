@@ -77,12 +77,6 @@
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.listView_display_names_enemy = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.numericUpDown_enemy_health = new System.Windows.Forms.NumericUpDown();
@@ -156,12 +150,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            this.tabPage11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_enemy_health)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturebox_enemycreationColor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_blank2)).BeginInit();
@@ -555,7 +543,6 @@
             // 
             this.tabControl4.Controls.Add(this.tabPage9);
             this.tabControl4.Controls.Add(this.tabPage10);
-            this.tabControl4.Controls.Add(this.tabPage11);
             this.tabControl4.Location = new System.Drawing.Point(19, 476);
             this.tabControl4.Name = "tabControl4";
             this.tabControl4.SelectedIndex = 0;
@@ -650,7 +637,7 @@
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage10.Size = new System.Drawing.Size(625, 100);
             this.tabPage10.TabIndex = 1;
-            this.tabPage10.Text = "Rogue";
+            this.tabPage10.Text = "Goblin";
             this.tabPage10.UseVisualStyleBackColor = true;
             // 
             // pictureBox9
@@ -712,81 +699,6 @@
             this.pictureBox13.TabIndex = 32;
             this.pictureBox13.TabStop = false;
             this.pictureBox13.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
-            // 
-            // tabPage11
-            // 
-            this.tabPage11.Controls.Add(this.pictureBox15);
-            this.tabPage11.Controls.Add(this.pictureBox17);
-            this.tabPage11.Controls.Add(this.pictureBox18);
-            this.tabPage11.Controls.Add(this.pictureBox19);
-            this.tabPage11.Controls.Add(this.pictureBox20);
-            this.tabPage11.Location = new System.Drawing.Point(4, 22);
-            this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(625, 100);
-            this.tabPage11.TabIndex = 2;
-            this.tabPage11.Text = "Ranger";
-            this.tabPage11.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox15.BackgroundImage")));
-            this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox15.Location = new System.Drawing.Point(480, 10);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox15.TabIndex = 41;
-            this.pictureBox15.TabStop = false;
-            this.pictureBox15.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox17.BackgroundImage")));
-            this.pictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox17.Location = new System.Drawing.Point(378, 10);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox17.TabIndex = 40;
-            this.pictureBox17.TabStop = false;
-            this.pictureBox17.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox18.BackgroundImage")));
-            this.pictureBox18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox18.Location = new System.Drawing.Point(273, 10);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox18.TabIndex = 39;
-            this.pictureBox18.TabStop = false;
-            this.pictureBox18.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox19.BackgroundImage")));
-            this.pictureBox19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox19.Location = new System.Drawing.Point(72, 10);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox19.TabIndex = 37;
-            this.pictureBox19.TabStop = false;
-            this.pictureBox19.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox20.BackgroundImage")));
-            this.pictureBox20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox20.Location = new System.Drawing.Point(173, 10);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox20.TabIndex = 38;
-            this.pictureBox20.TabStop = false;
-            this.pictureBox20.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
             // 
             // listView_display_names_enemy
             // 
@@ -1296,7 +1208,7 @@
             // customPictureBoxCircle_enemycreation_chosenAvatar
             // 
             this.customPictureBoxCircle_enemycreation_chosenAvatar.BackColor = System.Drawing.Color.Aquamarine;
-            this.customPictureBoxCircle_enemycreation_chosenAvatar.BackgroundImage = global::DungeonsAndDragons.Properties.Resources.D_D_dark_sword_guy;
+            this.customPictureBoxCircle_enemycreation_chosenAvatar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("customPictureBoxCircle_enemycreation_chosenAvatar.BackgroundImage")));
             this.customPictureBoxCircle_enemycreation_chosenAvatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.customPictureBoxCircle_enemycreation_chosenAvatar.Location = new System.Drawing.Point(107, 19);
             this.customPictureBoxCircle_enemycreation_chosenAvatar.Name = "customPictureBoxCircle_enemycreation_chosenAvatar";
@@ -1356,12 +1268,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            this.tabPage11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_enemy_health)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturebox_enemycreationColor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_blank2)).EndInit();
@@ -1500,12 +1406,6 @@
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.TabPage tabPage11;
-        private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.PictureBox pictureBox17;
-        private System.Windows.Forms.PictureBox pictureBox18;
-        private System.Windows.Forms.PictureBox pictureBox19;
-        private System.Windows.Forms.PictureBox pictureBox20;
     }
 }
 
