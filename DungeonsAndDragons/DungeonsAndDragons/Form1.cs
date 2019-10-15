@@ -101,10 +101,13 @@ namespace DungeonsAndDragons
             numericUpDown_enemy_health.Maximum = 999;
             numericUpDown_enemy_health.Minimum = 0;
 
+            listView_display_names_enemy.View = View.List;
+
             //player creation tab section
             bmpChooseColorPlayer = new Bitmap(pictureBox_playercreation_color.Image);
             assignedColorPlayer = Color.Orange;
             customPictureBoxCircle_playercreation_chosenAvatar.BackColor = assignedColorPlayer;
+            listView_display_names_player.View = View.List;
         }
 
         /*****************************************************************
@@ -608,6 +611,9 @@ namespace DungeonsAndDragons
                 {
                     if(textBox_enemy_name.Text.Equals(Program.enemies[i].ReturnName()))
                     {
+                        listView_display_names_enemy.Items.Add("Oops!, an Enemy with that" +
+                            "name already exists");
+                        RemoveEnemyOrPlayerNameOffList(6, listView_display_names_enemy.Items.Count, "enemy");
                         return;
                     }
                 }
@@ -615,6 +621,9 @@ namespace DungeonsAndDragons
                 {
                     if (textBox_enemy_name.Text.Equals(Program.players[i].ReturnName()))
                     {
+                        listView_display_names_enemy.Items.Add("Oops!, a Player with that" +
+                            "name already exists");
+                        RemoveEnemyOrPlayerNameOffList(6, listView_display_names_enemy.Items.Count, "enemy");
                         return;
                     }
                 }
@@ -622,8 +631,34 @@ namespace DungeonsAndDragons
                 Program.enemies.Add(new Enemy(textBox_enemy_name.Text.ToString(), createAvatarEnemy(textBox_enemy_name.Text.ToString()), Decimal.ToInt32(numericUpDown_enemy_health.Value)));
                 AddEnemy();
 
-                listView_display_names_enemy.Items.Add(textBox_enemy_name.Text);
+                listView_display_names_enemy.Items.Add("Added Enemy: Name[" +textBox_enemy_name.Text + "]"+ 
+                    " Health[ " + numericUpDown_enemy_health.Value+"]");
             }
+            else
+            {
+                listView_display_names_enemy.Items.Add("Oops!, name cannot be blank");
+            }
+
+            RemoveEnemyOrPlayerNameOffList(6, listView_display_names_enemy.Items.Count, "enemy");
+        }
+
+        /*****************************************************************
+        Function: RemoveEnemyOrPlayerNameOffList
+        Trigger: when the list reaches max capacity, remove one off the top
+        Where: called via functions, designed for player / enemy selection
+        Result: removes the top most text off the list
+        ******************************************************************/
+        public void RemoveEnemyOrPlayerNameOffList(int maxLength, int currentLength,string name)
+        {
+            if (currentLength >= maxLength)
+            {
+                if(name.Equals("enemy"))
+                    listView_display_names_enemy.Items.RemoveAt(0);
+
+                if (name.Equals("player"))
+                    listView_display_names_player.Items.RemoveAt(0);
+            }
+
         }
 
         /*****************************************************************
