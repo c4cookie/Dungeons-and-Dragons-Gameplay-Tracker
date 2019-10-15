@@ -15,6 +15,7 @@ namespace DungeonsAndDragons
         {
             this.name = name;
             this.avatar = avatar;
+            // test
         }
 
         public string ReturnName()
