@@ -160,6 +160,19 @@ namespace DungeonsAndDragons
 
             TableLayout.Add(PlayerPanel);
         }
+        private CustomPictureBoxCircle createAvatarPlayer(string picturebox_name)
+        {
+            CustomPictureBoxCircle returnavatar = new CustomPictureBoxCircle();
+            returnavatar.Location = new Point(0, 0);
+            returnavatar.Name = "picturebox_" + picturebox_name;
+            returnavatar.Size = new Size(40, 40);
+            returnavatar.BackColor = customPictureBoxCircle_playercreation_chosenAvatar.BackColor;
+            returnavatar.BackgroundImage = customPictureBoxCircle_playercreation_chosenAvatar.BackgroundImage;
+            returnavatar.BackgroundImageLayout = ImageLayout.Stretch;
+            returnavatar.Tag = "avatar";
+            returnavatar.DoubleClick += new EventHandler(Form1.thisFormStatic.Avatar_PlaceOnGrid);
+            return returnavatar;
+        }
 
         /*****************************************************************
         Functions: AddEnemy
@@ -640,6 +653,50 @@ namespace DungeonsAndDragons
             }
 
             RemoveEnemyOrPlayerNameOffList(6, listView_display_names_enemy.Items.Count, "enemy");
+        }
+
+        /*****************************************************************
+        Function: button_player_create_Click
+        Trigger: Create avatar button clicked
+        Where: Player selection page
+        Result: Creates the chosen avatar
+        ******************************************************************/
+        private void button_player_create_Click(object sender, EventArgs e)
+        {
+            if (textBox_player_name.Text.Length > 0)
+            {
+                for (int i = 0; i < Program.enemies.Count; i++)
+                {
+                    if (textBox_player_name.Text.Equals(Program.enemies[i].ReturnName()))
+                    {
+                        listView_display_names_player.Items.Add("Oops!, an Enemy with that" +
+                            "name already exists");
+                        RemoveEnemyOrPlayerNameOffList(6, listView_display_names_player.Items.Count, "player");
+                        return;
+                    }
+                }
+                for (int i = 0; i < Program.players.Count; i++)
+                {
+                    if (textBox_player_name.Text.Equals(Program.players[i].ReturnName()))
+                    {
+                        listView_display_names_player.Items.Add("Oops!, a Player with that" +
+                            "name already exists");
+                        RemoveEnemyOrPlayerNameOffList(6, listView_display_names_player.Items.Count, "player");
+                        return;
+                    }
+                }
+
+                Program.players.Add(new Player(textBox_player_name.Text.ToString(), createAvatarPlayer(textBox_player_name.Text.ToString())));
+                AddPlayer();
+
+                listView_display_names_player.Items.Add("Added Player: Name[" + textBox_player_name.Text + "]");
+            }
+            else
+            {
+                listView_display_names_player.Items.Add("Oops!, name cannot be blank");
+            }
+
+            RemoveEnemyOrPlayerNameOffList(6, listView_display_names_player.Items.Count, "player");
         }
 
         /*****************************************************************

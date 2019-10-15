@@ -794,6 +794,7 @@
             this.button_player_create.TabIndex = 54;
             this.button_player_create.Text = "Create Character";
             this.button_player_create.UseVisualStyleBackColor = true;
+            this.button_player_create.Click += new System.EventHandler(this.button_player_create_Click);
             // 
             // textBox_player_name
             // 
