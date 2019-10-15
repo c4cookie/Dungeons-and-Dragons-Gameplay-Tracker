@@ -64,6 +64,25 @@
             this.button_settings_gameplay_back = new System.Windows.Forms.Button();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.tabPage_enemycreation = new System.Windows.Forms.TabPage();
+            this.tabControl4 = new System.Windows.Forms.TabControl();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.listView_display_names_enemy = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.numericUpDown_enemy_health = new System.Windows.Forms.NumericUpDown();
@@ -73,11 +92,6 @@
             this.button_characterselection_cancel = new System.Windows.Forms.Button();
             this.button_enemy_createavatar = new System.Windows.Forms.Button();
             this.textBox_enemy_name = new System.Windows.Forms.TextBox();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.pictureBox_enemy_select1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox_enemy_select2 = new System.Windows.Forms.PictureBox();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.pictureBox_blank2 = new System.Windows.Forms.PictureBox();
             this.pictureBox_blank = new System.Windows.Forms.PictureBox();
             this.pictureBox_charactercreation_background = new System.Windows.Forms.PictureBox();
@@ -85,10 +99,26 @@
             this.pictureBox_playercreation_color = new System.Windows.Forms.PictureBox();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.pictureBox_playerselect_6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_playerselect_5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_playerselect_4 = new System.Windows.Forms.PictureBox();
             this.pictureBox_playerselect_3 = new System.Windows.Forms.PictureBox();
             this.pictureBox_playerselect_1 = new System.Windows.Forms.PictureBox();
             this.pictureBox_playerselect_2 = new System.Windows.Forms.PictureBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.pictureBox_playerselect_12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_playerselect_11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_playerselect_10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_playerselect_9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_playerselect_7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_playerselect_8 = new System.Windows.Forms.PictureBox();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.pictureBox_playerselect_18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_playerselect_17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_playerselect_16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_playerselect_15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_playerselect_13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_playerselect_14 = new System.Windows.Forms.PictureBox();
             this.listView_display_names_player = new System.Windows.Forms.ListView();
             this.label_playercreation_name = new System.Windows.Forms.Label();
             this.button_player_cancel = new System.Windows.Forms.Button();
@@ -101,15 +131,6 @@
             this.customPictureBoxCircle_displaycolor = new DungeonsAndDragons.CustomPictureBoxCircle();
             this.customPictureBoxCircle_enemycreation_chosenAvatar = new DungeonsAndDragons.CustomPictureBoxCircle();
             this.customPictureBoxCircle_playercreation_chosenAvatar = new DungeonsAndDragons.CustomPictureBoxCircle();
-            this.pictureBox_playerselect_4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox_playerselect_5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox_playerselect_6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox_playerselect_12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox_playerselect_11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox_playerselect_10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox_playerselect_9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox_playerselect_7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox_playerselect_8 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_pensize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_gridsize)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -122,12 +143,27 @@
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.tabPage_enemycreation.SuspendLayout();
+            this.tabControl4.SuspendLayout();
+            this.tabPage9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.tabPage10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            this.tabPage11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_enemy_health)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturebox_enemycreationColor)).BeginInit();
-            this.tabControl2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_enemy_select1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_enemy_select2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_blank2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_blank)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_charactercreation_background)).BeginInit();
@@ -135,25 +171,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playercreation_color)).BeginInit();
             this.tabControl3.SuspendLayout();
             this.tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_2)).BeginInit();
             this.tabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_blank_playercreation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_blank_playercreation2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_charactercreation_background_player)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customPictureBoxCircle_displaycolor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customPictureBoxCircle_enemycreation_chosenAvatar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customPictureBoxCircle_playercreation_chosenAvatar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_8)).BeginInit();
+            this.tabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_blank_playercreation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_blank_playercreation2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_charactercreation_background_player)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customPictureBoxCircle_displaycolor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customPictureBoxCircle_enemycreation_chosenAvatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customPictureBoxCircle_playercreation_chosenAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // trackBar_pensize
@@ -486,7 +529,8 @@
             // 
             // tabPage_enemycreation
             // 
-            this.tabPage_enemycreation.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.tabPage_enemycreation.BackColor = System.Drawing.Color.White;
+            this.tabPage_enemycreation.Controls.Add(this.tabControl4);
             this.tabPage_enemycreation.Controls.Add(this.customPictureBoxCircle_enemycreation_chosenAvatar);
             this.tabPage_enemycreation.Controls.Add(this.listView_display_names_enemy);
             this.tabPage_enemycreation.Controls.Add(this.numericUpDown_enemy_health);
@@ -496,7 +540,6 @@
             this.tabPage_enemycreation.Controls.Add(this.button_characterselection_cancel);
             this.tabPage_enemycreation.Controls.Add(this.button_enemy_createavatar);
             this.tabPage_enemycreation.Controls.Add(this.textBox_enemy_name);
-            this.tabPage_enemycreation.Controls.Add(this.tabControl2);
             this.tabPage_enemycreation.Controls.Add(this.pictureBox_blank2);
             this.tabPage_enemycreation.Controls.Add(this.pictureBox_blank);
             this.tabPage_enemycreation.Controls.Add(this.pictureBox_charactercreation_background);
@@ -507,6 +550,243 @@
             this.tabPage_enemycreation.Size = new System.Drawing.Size(1167, 649);
             this.tabPage_enemycreation.TabIndex = 2;
             this.tabPage_enemycreation.Text = "enemyCreation";
+            // 
+            // tabControl4
+            // 
+            this.tabControl4.Controls.Add(this.tabPage9);
+            this.tabControl4.Controls.Add(this.tabPage10);
+            this.tabControl4.Controls.Add(this.tabPage11);
+            this.tabControl4.Location = new System.Drawing.Point(19, 476);
+            this.tabControl4.Name = "tabControl4";
+            this.tabControl4.SelectedIndex = 0;
+            this.tabControl4.Size = new System.Drawing.Size(633, 126);
+            this.tabControl4.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabControl4.TabIndex = 58;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Controls.Add(this.pictureBox3);
+            this.tabPage9.Controls.Add(this.pictureBox4);
+            this.tabPage9.Controls.Add(this.pictureBox5);
+            this.tabPage9.Controls.Add(this.pictureBox6);
+            this.tabPage9.Controls.Add(this.pictureBox7);
+            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(625, 100);
+            this.tabPage9.TabIndex = 0;
+            this.tabPage9.Text = "Undead";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.Location = new System.Drawing.Point(480, 10);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox3.TabIndex = 29;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox4.Location = new System.Drawing.Point(378, 10);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox4.TabIndex = 28;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox5.Location = new System.Drawing.Point(273, 10);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox5.TabIndex = 27;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox6.Location = new System.Drawing.Point(72, 10);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox6.TabIndex = 21;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox7.Location = new System.Drawing.Point(173, 10);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox7.TabIndex = 26;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.Controls.Add(this.pictureBox9);
+            this.tabPage10.Controls.Add(this.pictureBox10);
+            this.tabPage10.Controls.Add(this.pictureBox11);
+            this.tabPage10.Controls.Add(this.pictureBox12);
+            this.tabPage10.Controls.Add(this.pictureBox13);
+            this.tabPage10.Location = new System.Drawing.Point(4, 22);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage10.Size = new System.Drawing.Size(625, 100);
+            this.tabPage10.TabIndex = 1;
+            this.tabPage10.Text = "Rogue";
+            this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox9.Location = new System.Drawing.Point(480, 10);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox9.TabIndex = 35;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.BackgroundImage")));
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox10.Location = new System.Drawing.Point(378, 10);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox10.TabIndex = 34;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox11.BackgroundImage")));
+            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox11.Location = new System.Drawing.Point(273, 10);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox11.TabIndex = 33;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox12.BackgroundImage")));
+            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox12.Location = new System.Drawing.Point(72, 10);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox12.TabIndex = 31;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox13.BackgroundImage")));
+            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox13.Location = new System.Drawing.Point(173, 10);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox13.TabIndex = 32;
+            this.pictureBox13.TabStop = false;
+            this.pictureBox13.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
+            // 
+            // tabPage11
+            // 
+            this.tabPage11.Controls.Add(this.pictureBox15);
+            this.tabPage11.Controls.Add(this.pictureBox17);
+            this.tabPage11.Controls.Add(this.pictureBox18);
+            this.tabPage11.Controls.Add(this.pictureBox19);
+            this.tabPage11.Controls.Add(this.pictureBox20);
+            this.tabPage11.Location = new System.Drawing.Point(4, 22);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage11.Size = new System.Drawing.Size(625, 100);
+            this.tabPage11.TabIndex = 2;
+            this.tabPage11.Text = "Ranger";
+            this.tabPage11.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox15.BackgroundImage")));
+            this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox15.Location = new System.Drawing.Point(480, 10);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox15.TabIndex = 41;
+            this.pictureBox15.TabStop = false;
+            this.pictureBox15.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox17.BackgroundImage")));
+            this.pictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox17.Location = new System.Drawing.Point(378, 10);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox17.TabIndex = 40;
+            this.pictureBox17.TabStop = false;
+            this.pictureBox17.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox18.BackgroundImage")));
+            this.pictureBox18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox18.Location = new System.Drawing.Point(273, 10);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox18.TabIndex = 39;
+            this.pictureBox18.TabStop = false;
+            this.pictureBox18.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox19.BackgroundImage")));
+            this.pictureBox19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox19.Location = new System.Drawing.Point(72, 10);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox19.TabIndex = 37;
+            this.pictureBox19.TabStop = false;
+            this.pictureBox19.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox20.BackgroundImage")));
+            this.pictureBox20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox20.Location = new System.Drawing.Point(173, 10);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox20.TabIndex = 38;
+            this.pictureBox20.TabStop = false;
+            this.pictureBox20.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
             // 
             // listView_display_names_enemy
             // 
@@ -590,64 +870,9 @@
             this.textBox_enemy_name.Size = new System.Drawing.Size(194, 20);
             this.textBox_enemy_name.TabIndex = 0;
             // 
-            // tabControl2
-            // 
-            this.tabControl2.Controls.Add(this.tabPage3);
-            this.tabControl2.Controls.Add(this.tabPage4);
-            this.tabControl2.Location = new System.Drawing.Point(19, 479);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(633, 126);
-            this.tabControl2.TabIndex = 45;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.pictureBox_enemy_select1);
-            this.tabPage3.Controls.Add(this.pictureBox_enemy_select2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(625, 100);
-            this.tabPage3.TabIndex = 0;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox_enemy_select1
-            // 
-            this.pictureBox_enemy_select1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_enemy_select1.BackgroundImage = global::DungeonsAndDragons.Properties.Resources.D_DClericFemale1;
-            this.pictureBox_enemy_select1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox_enemy_select1.Location = new System.Drawing.Point(24, 8);
-            this.pictureBox_enemy_select1.Name = "pictureBox_enemy_select1";
-            this.pictureBox_enemy_select1.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox_enemy_select1.TabIndex = 21;
-            this.pictureBox_enemy_select1.TabStop = false;
-            this.pictureBox_enemy_select1.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
-            // 
-            // pictureBox_enemy_select2
-            // 
-            this.pictureBox_enemy_select2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_enemy_select2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_enemy_select2.BackgroundImage")));
-            this.pictureBox_enemy_select2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox_enemy_select2.Location = new System.Drawing.Point(128, 8);
-            this.pictureBox_enemy_select2.Name = "pictureBox_enemy_select2";
-            this.pictureBox_enemy_select2.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox_enemy_select2.TabIndex = 26;
-            this.pictureBox_enemy_select2.TabStop = false;
-            this.pictureBox_enemy_select2.Click += new System.EventHandler(this.picturebox_avatarselection_enemy);
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(625, 100);
-            this.tabPage4.TabIndex = 1;
-            this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
             // pictureBox_blank2
             // 
+            this.pictureBox_blank2.BackColor = System.Drawing.SystemColors.ControlDark;
             this.pictureBox_blank2.Location = new System.Drawing.Point(658, -38);
             this.pictureBox_blank2.Name = "pictureBox_blank2";
             this.pictureBox_blank2.Size = new System.Drawing.Size(517, 704);
@@ -656,6 +881,7 @@
             // 
             // pictureBox_blank
             // 
+            this.pictureBox_blank.BackColor = System.Drawing.SystemColors.ControlDark;
             this.pictureBox_blank.Location = new System.Drawing.Point(-9, 444);
             this.pictureBox_blank.Name = "pictureBox_blank";
             this.pictureBox_blank.Size = new System.Drawing.Size(893, 243);
@@ -666,9 +892,9 @@
             // 
             this.pictureBox_charactercreation_background.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_charactercreation_background.BackgroundImage")));
             this.pictureBox_charactercreation_background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox_charactercreation_background.Location = new System.Drawing.Point(-17, -22);
+            this.pictureBox_charactercreation_background.Location = new System.Drawing.Point(-9, -19);
             this.pictureBox_charactercreation_background.Name = "pictureBox_charactercreation_background";
-            this.pictureBox_charactercreation_background.Size = new System.Drawing.Size(1188, 686);
+            this.pictureBox_charactercreation_background.Size = new System.Drawing.Size(1180, 683);
             this.pictureBox_charactercreation_background.TabIndex = 16;
             this.pictureBox_charactercreation_background.TabStop = false;
             // 
@@ -711,10 +937,12 @@
             // 
             this.tabControl3.Controls.Add(this.tabPage6);
             this.tabControl3.Controls.Add(this.tabPage7);
+            this.tabControl3.Controls.Add(this.tabPage8);
             this.tabControl3.Location = new System.Drawing.Point(19, 479);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
             this.tabControl3.Size = new System.Drawing.Size(633, 126);
+            this.tabControl3.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl3.TabIndex = 57;
             // 
             // tabPage6
@@ -732,6 +960,42 @@
             this.tabPage6.TabIndex = 0;
             this.tabPage6.Text = "Sorcerer";
             this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox_playerselect_6
+            // 
+            this.pictureBox_playerselect_6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_playerselect_6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_6.BackgroundImage")));
+            this.pictureBox_playerselect_6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox_playerselect_6.Location = new System.Drawing.Point(526, 8);
+            this.pictureBox_playerselect_6.Name = "pictureBox_playerselect_6";
+            this.pictureBox_playerselect_6.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox_playerselect_6.TabIndex = 30;
+            this.pictureBox_playerselect_6.TabStop = false;
+            this.pictureBox_playerselect_6.Click += new System.EventHandler(this.picturebox_avatarselection_player);
+            // 
+            // pictureBox_playerselect_5
+            // 
+            this.pictureBox_playerselect_5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_playerselect_5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_5.BackgroundImage")));
+            this.pictureBox_playerselect_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox_playerselect_5.Location = new System.Drawing.Point(425, 8);
+            this.pictureBox_playerselect_5.Name = "pictureBox_playerselect_5";
+            this.pictureBox_playerselect_5.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox_playerselect_5.TabIndex = 29;
+            this.pictureBox_playerselect_5.TabStop = false;
+            this.pictureBox_playerselect_5.Click += new System.EventHandler(this.picturebox_avatarselection_player);
+            // 
+            // pictureBox_playerselect_4
+            // 
+            this.pictureBox_playerselect_4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_playerselect_4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_4.BackgroundImage")));
+            this.pictureBox_playerselect_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox_playerselect_4.Location = new System.Drawing.Point(323, 8);
+            this.pictureBox_playerselect_4.Name = "pictureBox_playerselect_4";
+            this.pictureBox_playerselect_4.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox_playerselect_4.TabIndex = 28;
+            this.pictureBox_playerselect_4.TabStop = false;
+            this.pictureBox_playerselect_4.Click += new System.EventHandler(this.picturebox_avatarselection_player);
             // 
             // pictureBox_playerselect_3
             // 
@@ -784,6 +1048,166 @@
             this.tabPage7.TabIndex = 1;
             this.tabPage7.Text = "Rogue";
             this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox_playerselect_12
+            // 
+            this.pictureBox_playerselect_12.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_playerselect_12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_12.BackgroundImage")));
+            this.pictureBox_playerselect_12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox_playerselect_12.Location = new System.Drawing.Point(527, 10);
+            this.pictureBox_playerselect_12.Name = "pictureBox_playerselect_12";
+            this.pictureBox_playerselect_12.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox_playerselect_12.TabIndex = 36;
+            this.pictureBox_playerselect_12.TabStop = false;
+            this.pictureBox_playerselect_12.Click += new System.EventHandler(this.picturebox_avatarselection_player);
+            // 
+            // pictureBox_playerselect_11
+            // 
+            this.pictureBox_playerselect_11.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_playerselect_11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_11.BackgroundImage")));
+            this.pictureBox_playerselect_11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox_playerselect_11.Location = new System.Drawing.Point(426, 10);
+            this.pictureBox_playerselect_11.Name = "pictureBox_playerselect_11";
+            this.pictureBox_playerselect_11.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox_playerselect_11.TabIndex = 35;
+            this.pictureBox_playerselect_11.TabStop = false;
+            this.pictureBox_playerselect_11.Click += new System.EventHandler(this.picturebox_avatarselection_player);
+            // 
+            // pictureBox_playerselect_10
+            // 
+            this.pictureBox_playerselect_10.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_playerselect_10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_10.BackgroundImage")));
+            this.pictureBox_playerselect_10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox_playerselect_10.Location = new System.Drawing.Point(324, 10);
+            this.pictureBox_playerselect_10.Name = "pictureBox_playerselect_10";
+            this.pictureBox_playerselect_10.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox_playerselect_10.TabIndex = 34;
+            this.pictureBox_playerselect_10.TabStop = false;
+            this.pictureBox_playerselect_10.Click += new System.EventHandler(this.picturebox_avatarselection_player);
+            // 
+            // pictureBox_playerselect_9
+            // 
+            this.pictureBox_playerselect_9.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_playerselect_9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_9.BackgroundImage")));
+            this.pictureBox_playerselect_9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox_playerselect_9.Location = new System.Drawing.Point(219, 10);
+            this.pictureBox_playerselect_9.Name = "pictureBox_playerselect_9";
+            this.pictureBox_playerselect_9.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox_playerselect_9.TabIndex = 33;
+            this.pictureBox_playerselect_9.TabStop = false;
+            this.pictureBox_playerselect_9.Click += new System.EventHandler(this.picturebox_avatarselection_player);
+            // 
+            // pictureBox_playerselect_7
+            // 
+            this.pictureBox_playerselect_7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_playerselect_7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_7.BackgroundImage")));
+            this.pictureBox_playerselect_7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox_playerselect_7.Location = new System.Drawing.Point(18, 10);
+            this.pictureBox_playerselect_7.Name = "pictureBox_playerselect_7";
+            this.pictureBox_playerselect_7.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox_playerselect_7.TabIndex = 31;
+            this.pictureBox_playerselect_7.TabStop = false;
+            this.pictureBox_playerselect_7.Click += new System.EventHandler(this.picturebox_avatarselection_player);
+            // 
+            // pictureBox_playerselect_8
+            // 
+            this.pictureBox_playerselect_8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_playerselect_8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_8.BackgroundImage")));
+            this.pictureBox_playerselect_8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox_playerselect_8.Location = new System.Drawing.Point(119, 10);
+            this.pictureBox_playerselect_8.Name = "pictureBox_playerselect_8";
+            this.pictureBox_playerselect_8.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox_playerselect_8.TabIndex = 32;
+            this.pictureBox_playerselect_8.TabStop = false;
+            this.pictureBox_playerselect_8.Click += new System.EventHandler(this.picturebox_avatarselection_player);
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.pictureBox_playerselect_18);
+            this.tabPage8.Controls.Add(this.pictureBox_playerselect_17);
+            this.tabPage8.Controls.Add(this.pictureBox_playerselect_16);
+            this.tabPage8.Controls.Add(this.pictureBox_playerselect_15);
+            this.tabPage8.Controls.Add(this.pictureBox_playerselect_13);
+            this.tabPage8.Controls.Add(this.pictureBox_playerselect_14);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(625, 100);
+            this.tabPage8.TabIndex = 2;
+            this.tabPage8.Text = "Ranger";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox_playerselect_18
+            // 
+            this.pictureBox_playerselect_18.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_playerselect_18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_18.BackgroundImage")));
+            this.pictureBox_playerselect_18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox_playerselect_18.Location = new System.Drawing.Point(527, 10);
+            this.pictureBox_playerselect_18.Name = "pictureBox_playerselect_18";
+            this.pictureBox_playerselect_18.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox_playerselect_18.TabIndex = 42;
+            this.pictureBox_playerselect_18.TabStop = false;
+            this.pictureBox_playerselect_18.Click += new System.EventHandler(this.picturebox_avatarselection_player);
+            // 
+            // pictureBox_playerselect_17
+            // 
+            this.pictureBox_playerselect_17.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_playerselect_17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_17.BackgroundImage")));
+            this.pictureBox_playerselect_17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox_playerselect_17.Location = new System.Drawing.Point(426, 10);
+            this.pictureBox_playerselect_17.Name = "pictureBox_playerselect_17";
+            this.pictureBox_playerselect_17.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox_playerselect_17.TabIndex = 41;
+            this.pictureBox_playerselect_17.TabStop = false;
+            this.pictureBox_playerselect_17.Click += new System.EventHandler(this.picturebox_avatarselection_player);
+            // 
+            // pictureBox_playerselect_16
+            // 
+            this.pictureBox_playerselect_16.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_playerselect_16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_16.BackgroundImage")));
+            this.pictureBox_playerselect_16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox_playerselect_16.Location = new System.Drawing.Point(324, 10);
+            this.pictureBox_playerselect_16.Name = "pictureBox_playerselect_16";
+            this.pictureBox_playerselect_16.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox_playerselect_16.TabIndex = 40;
+            this.pictureBox_playerselect_16.TabStop = false;
+            this.pictureBox_playerselect_16.Click += new System.EventHandler(this.picturebox_avatarselection_player);
+            // 
+            // pictureBox_playerselect_15
+            // 
+            this.pictureBox_playerselect_15.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_playerselect_15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_15.BackgroundImage")));
+            this.pictureBox_playerselect_15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox_playerselect_15.Location = new System.Drawing.Point(219, 10);
+            this.pictureBox_playerselect_15.Name = "pictureBox_playerselect_15";
+            this.pictureBox_playerselect_15.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox_playerselect_15.TabIndex = 39;
+            this.pictureBox_playerselect_15.TabStop = false;
+            this.pictureBox_playerselect_15.Click += new System.EventHandler(this.picturebox_avatarselection_player);
+            // 
+            // pictureBox_playerselect_13
+            // 
+            this.pictureBox_playerselect_13.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_playerselect_13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_13.BackgroundImage")));
+            this.pictureBox_playerselect_13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox_playerselect_13.Location = new System.Drawing.Point(18, 10);
+            this.pictureBox_playerselect_13.Name = "pictureBox_playerselect_13";
+            this.pictureBox_playerselect_13.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox_playerselect_13.TabIndex = 37;
+            this.pictureBox_playerselect_13.TabStop = false;
+            this.pictureBox_playerselect_13.Click += new System.EventHandler(this.picturebox_avatarselection_player);
+            // 
+            // pictureBox_playerselect_14
+            // 
+            this.pictureBox_playerselect_14.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_playerselect_14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_14.BackgroundImage")));
+            this.pictureBox_playerselect_14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox_playerselect_14.Location = new System.Drawing.Point(119, 10);
+            this.pictureBox_playerselect_14.Name = "pictureBox_playerselect_14";
+            this.pictureBox_playerselect_14.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox_playerselect_14.TabIndex = 38;
+            this.pictureBox_playerselect_14.TabStop = false;
+            this.pictureBox_playerselect_14.Click += new System.EventHandler(this.picturebox_avatarselection_player);
             // 
             // listView_display_names_player
             // 
@@ -891,114 +1315,6 @@
             this.customPictureBoxCircle_playercreation_chosenAvatar.TabIndex = 59;
             this.customPictureBoxCircle_playercreation_chosenAvatar.TabStop = false;
             // 
-            // pictureBox_playerselect_4
-            // 
-            this.pictureBox_playerselect_4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_playerselect_4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_4.BackgroundImage")));
-            this.pictureBox_playerselect_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox_playerselect_4.Location = new System.Drawing.Point(323, 8);
-            this.pictureBox_playerselect_4.Name = "pictureBox_playerselect_4";
-            this.pictureBox_playerselect_4.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox_playerselect_4.TabIndex = 28;
-            this.pictureBox_playerselect_4.TabStop = false;
-            this.pictureBox_playerselect_4.Click += new System.EventHandler(this.picturebox_avatarselection_player);
-            // 
-            // pictureBox_playerselect_5
-            // 
-            this.pictureBox_playerselect_5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_playerselect_5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_5.BackgroundImage")));
-            this.pictureBox_playerselect_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox_playerselect_5.Location = new System.Drawing.Point(425, 8);
-            this.pictureBox_playerselect_5.Name = "pictureBox_playerselect_5";
-            this.pictureBox_playerselect_5.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox_playerselect_5.TabIndex = 29;
-            this.pictureBox_playerselect_5.TabStop = false;
-            this.pictureBox_playerselect_5.Click += new System.EventHandler(this.picturebox_avatarselection_player);
-            // 
-            // pictureBox_playerselect_6
-            // 
-            this.pictureBox_playerselect_6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_playerselect_6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_6.BackgroundImage")));
-            this.pictureBox_playerselect_6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox_playerselect_6.Location = new System.Drawing.Point(526, 8);
-            this.pictureBox_playerselect_6.Name = "pictureBox_playerselect_6";
-            this.pictureBox_playerselect_6.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox_playerselect_6.TabIndex = 30;
-            this.pictureBox_playerselect_6.TabStop = false;
-            this.pictureBox_playerselect_6.Click += new System.EventHandler(this.picturebox_avatarselection_player);
-            // 
-            // pictureBox_playerselect_12
-            // 
-            this.pictureBox_playerselect_12.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_playerselect_12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_12.BackgroundImage")));
-            this.pictureBox_playerselect_12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox_playerselect_12.Location = new System.Drawing.Point(527, 10);
-            this.pictureBox_playerselect_12.Name = "pictureBox_playerselect_12";
-            this.pictureBox_playerselect_12.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox_playerselect_12.TabIndex = 36;
-            this.pictureBox_playerselect_12.TabStop = false;
-            this.pictureBox_playerselect_12.Click += new System.EventHandler(this.picturebox_avatarselection_player);
-            // 
-            // pictureBox_playerselect_11
-            // 
-            this.pictureBox_playerselect_11.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_playerselect_11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_11.BackgroundImage")));
-            this.pictureBox_playerselect_11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox_playerselect_11.Location = new System.Drawing.Point(426, 10);
-            this.pictureBox_playerselect_11.Name = "pictureBox_playerselect_11";
-            this.pictureBox_playerselect_11.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox_playerselect_11.TabIndex = 35;
-            this.pictureBox_playerselect_11.TabStop = false;
-            this.pictureBox_playerselect_11.Click += new System.EventHandler(this.picturebox_avatarselection_player);
-            // 
-            // pictureBox_playerselect_10
-            // 
-            this.pictureBox_playerselect_10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_playerselect_10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_10.BackgroundImage")));
-            this.pictureBox_playerselect_10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox_playerselect_10.Location = new System.Drawing.Point(324, 10);
-            this.pictureBox_playerselect_10.Name = "pictureBox_playerselect_10";
-            this.pictureBox_playerselect_10.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox_playerselect_10.TabIndex = 34;
-            this.pictureBox_playerselect_10.TabStop = false;
-            this.pictureBox_playerselect_10.Click += new System.EventHandler(this.picturebox_avatarselection_player);
-            // 
-            // pictureBox_playerselect_9
-            // 
-            this.pictureBox_playerselect_9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_playerselect_9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_9.BackgroundImage")));
-            this.pictureBox_playerselect_9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox_playerselect_9.Location = new System.Drawing.Point(219, 10);
-            this.pictureBox_playerselect_9.Name = "pictureBox_playerselect_9";
-            this.pictureBox_playerselect_9.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox_playerselect_9.TabIndex = 33;
-            this.pictureBox_playerselect_9.TabStop = false;
-            this.pictureBox_playerselect_9.Click += new System.EventHandler(this.picturebox_avatarselection_player);
-            // 
-            // pictureBox_playerselect_7
-            // 
-            this.pictureBox_playerselect_7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_playerselect_7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_7.BackgroundImage")));
-            this.pictureBox_playerselect_7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox_playerselect_7.Location = new System.Drawing.Point(18, 10);
-            this.pictureBox_playerselect_7.Name = "pictureBox_playerselect_7";
-            this.pictureBox_playerselect_7.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox_playerselect_7.TabIndex = 31;
-            this.pictureBox_playerselect_7.TabStop = false;
-            this.pictureBox_playerselect_7.Click += new System.EventHandler(this.picturebox_avatarselection_player);
-            // 
-            // pictureBox_playerselect_8
-            // 
-            this.pictureBox_playerselect_8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_playerselect_8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_playerselect_8.BackgroundImage")));
-            this.pictureBox_playerselect_8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox_playerselect_8.Location = new System.Drawing.Point(119, 10);
-            this.pictureBox_playerselect_8.Name = "pictureBox_playerselect_8";
-            this.pictureBox_playerselect_8.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox_playerselect_8.TabIndex = 32;
-            this.pictureBox_playerselect_8.TabStop = false;
-            this.pictureBox_playerselect_8.Click += new System.EventHandler(this.picturebox_avatarselection_player);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1027,12 +1343,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.tabPage_enemycreation.ResumeLayout(false);
             this.tabPage_enemycreation.PerformLayout();
+            this.tabControl4.ResumeLayout(false);
+            this.tabPage9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.tabPage10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            this.tabPage11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_enemy_health)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturebox_enemycreationColor)).EndInit();
-            this.tabControl2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_enemy_select1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_enemy_select2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_blank2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_blank)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_charactercreation_background)).EndInit();
@@ -1041,25 +1372,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playercreation_color)).EndInit();
             this.tabControl3.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_2)).EndInit();
             this.tabPage7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_blank_playercreation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_blank_playercreation2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_charactercreation_background_player)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customPictureBoxCircle_displaycolor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customPictureBoxCircle_enemycreation_chosenAvatar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customPictureBoxCircle_playercreation_chosenAvatar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_8)).EndInit();
+            this.tabPage8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playerselect_14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_blank_playercreation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_blank_playercreation2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_charactercreation_background_player)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customPictureBoxCircle_displaycolor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customPictureBoxCircle_enemycreation_chosenAvatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customPictureBoxCircle_playercreation_chosenAvatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1096,13 +1434,8 @@
         private System.Windows.Forms.Label label_charactercreation_name;
         private System.Windows.Forms.Label label_charactercreation_health;
         private System.Windows.Forms.PictureBox pictureBox_charactercreation_background;
-        private System.Windows.Forms.PictureBox pictureBox_enemy_select1;
         private System.Windows.Forms.Button button_enemy_createavatar;
         private System.Windows.Forms.Button button_characterselection_cancel;
-        private System.Windows.Forms.PictureBox pictureBox_enemy_select2;
-        private System.Windows.Forms.TabControl tabControl2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.PictureBox pictureBox_blank2;
         private System.Windows.Forms.PictureBox pictureBox_blank;
         private System.Windows.Forms.Label label1;
@@ -1147,6 +1480,32 @@
         private System.Windows.Forms.PictureBox pictureBox_playerselect_9;
         private System.Windows.Forms.PictureBox pictureBox_playerselect_7;
         private System.Windows.Forms.PictureBox pictureBox_playerselect_8;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.PictureBox pictureBox_playerselect_18;
+        private System.Windows.Forms.PictureBox pictureBox_playerselect_17;
+        private System.Windows.Forms.PictureBox pictureBox_playerselect_16;
+        private System.Windows.Forms.PictureBox pictureBox_playerselect_15;
+        private System.Windows.Forms.PictureBox pictureBox_playerselect_13;
+        private System.Windows.Forms.PictureBox pictureBox_playerselect_14;
+        private System.Windows.Forms.TabControl tabControl4;
+        private System.Windows.Forms.TabPage tabPage9;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.TabPage tabPage10;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.TabPage tabPage11;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.PictureBox pictureBox18;
+        private System.Windows.Forms.PictureBox pictureBox19;
+        private System.Windows.Forms.PictureBox pictureBox20;
     }
 }
 

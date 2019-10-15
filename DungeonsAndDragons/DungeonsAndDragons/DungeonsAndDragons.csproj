@@ -147,24 +147,6 @@
     <None Include="Resources\paper-plain.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\mantis_128.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ant_128.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cricket_128.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dragon_fly_128.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ladybug_128.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\animal1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\paper-horiz.png" />
   </ItemGroup>
   <ItemGroup>
@@ -174,21 +156,6 @@
     <None Include="Resources\paperbackground.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\frame.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\framepng.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\colorbar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\colorpalletpng.PNG" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\colorpalletpngrotate.PNG" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\D&amp;DClericFemale1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -196,15 +163,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\D&amp;D-dark-sword-guy.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d&amp;d-halforc-goblin.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\backgroundrocksnice.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\8890.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
