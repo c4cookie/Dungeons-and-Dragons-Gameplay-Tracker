@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{21E6974E-6502-4BFA-8A19-754068EDA610}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DungeonsAndDragons</RootNamespace>
+    <AssemblyName>DungeonsAndDragons</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Enemy.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2_CharacterCreation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2_CharacterCreation.Designer.cs">
+      <DependentUpon>Form2_CharacterCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3_EnemyCreation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3_EnemyCreation.Designer.cs">
+      <DependentUpon>Form3_EnemyCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GridSizeControl.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2_CharacterCreation.resx">
+      <DependentUpon>Form2_CharacterCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3_EnemyCreation.resx">
+      <DependentUpon>Form3_EnemyCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorwheel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pen.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-10-Pencil.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warcraft1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warcraft2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warcraft3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warcraft4.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warcraft5.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warcraft4png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warcraft1png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warcraft2png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warcraft3png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warcraft5png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper-plain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mantis_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ant_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cricket_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragon_fly_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ladybug_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper-horiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper-with-sidebar-runes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paperbackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frame.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\framepng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorbar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorpalletpng.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorpalletpngrotate.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D&amp;DClericFemale1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D&amp;D-HalfOrc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D&amp;D-dark-sword-guy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d&amp;d-halforc-goblin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundrocksnice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8890.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
