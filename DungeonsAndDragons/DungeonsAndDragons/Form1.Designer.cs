@@ -1124,9 +1124,9 @@
             // listView_display_names_player
             // 
             this.listView_display_names_player.HideSelection = false;
-            this.listView_display_names_player.Location = new System.Drawing.Point(713, 166);
+            this.listView_display_names_player.Location = new System.Drawing.Point(907, 19);
             this.listView_display_names_player.Name = "listView_display_names_player";
-            this.listView_display_names_player.Size = new System.Drawing.Size(411, 146);
+            this.listView_display_names_player.Size = new System.Drawing.Size(252, 293);
             this.listView_display_names_player.TabIndex = 56;
             this.listView_display_names_player.UseCompatibleStateImageBehavior = false;
             // 
@@ -1134,7 +1134,7 @@
             // 
             this.label_playercreation_name.AutoSize = true;
             this.label_playercreation_name.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.label_playercreation_name.Location = new System.Drawing.Point(911, 115);
+            this.label_playercreation_name.Location = new System.Drawing.Point(768, 254);
             this.label_playercreation_name.Name = "label_playercreation_name";
             this.label_playercreation_name.Size = new System.Drawing.Size(35, 13);
             this.label_playercreation_name.TabIndex = 53;
@@ -1142,7 +1142,7 @@
             // 
             // button_player_cancel
             // 
-            this.button_player_cancel.Location = new System.Drawing.Point(790, 28);
+            this.button_player_cancel.Location = new System.Drawing.Point(728, 150);
             this.button_player_cancel.Name = "button_player_cancel";
             this.button_player_cancel.Size = new System.Drawing.Size(120, 60);
             this.button_player_cancel.TabIndex = 55;
@@ -1152,7 +1152,7 @@
             // 
             // button_player_create
             // 
-            this.button_player_create.Location = new System.Drawing.Point(946, 28);
+            this.button_player_create.Location = new System.Drawing.Point(728, 46);
             this.button_player_create.Name = "button_player_create";
             this.button_player_create.Size = new System.Drawing.Size(120, 60);
             this.button_player_create.TabIndex = 54;
@@ -1162,7 +1162,7 @@
             // 
             // textBox_player_name
             // 
-            this.textBox_player_name.Location = new System.Drawing.Point(833, 131);
+            this.textBox_player_name.Location = new System.Drawing.Point(690, 270);
             this.textBox_player_name.MaxLength = 6;
             this.textBox_player_name.Name = "textBox_player_name";
             this.textBox_player_name.Size = new System.Drawing.Size(194, 20);

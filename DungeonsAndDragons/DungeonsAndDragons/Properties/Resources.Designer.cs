@@ -163,6 +163,16 @@ namespace DungeonsAndDragons.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap myturn {
+            get {
+                object obj = ResourceManager.GetObject("myturn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap paper_plain {
             get {
                 object obj = ResourceManager.GetObject("paper_plain", resourceCulture);
