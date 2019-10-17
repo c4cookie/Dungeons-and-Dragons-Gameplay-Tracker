@@ -8,12 +8,14 @@ using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows.Forms;
 
 namespace DungeonsAndDragons
 {
     public partial class Form1 : Form
     {
+        System.Timers.Timer STimer;
         string tempstorage;
         string[] tempstoragearray;
         Point lastPoint;
@@ -26,6 +28,7 @@ namespace DungeonsAndDragons
         public static Form1 thisFormStatic;
         GridSizeControl GridControl;
         List<TableLayoutPanel> TableLayout;
+        Color Color_whosturn = Color.LightBlue;
 
         int amount;
         int ysize;
@@ -64,6 +67,13 @@ namespace DungeonsAndDragons
         ******************************************************************/
         private void SetValues()
         {
+            //Used for fake scrollbar
+            CheckForIllegalCrossThreadCalls = false;
+            STimer = new System.Timers.Timer();
+            STimer.Interval = 50;
+            STimer.Elapsed += STimer_Elasped;
+            STimer.Start();
+
             //Objects
             formCharacterCreation = new Form2_CharacterCreation(this);
             GridControl = new GridSizeControl();
@@ -111,6 +121,18 @@ namespace DungeonsAndDragons
         }
 
         /*****************************************************************
+        Function: STimer_Elasped
+        Trigger: N/A
+        Where: N/A
+        Result: shows a fake scrollbar inplace on the flowlayout panel until
+                the scrollbar actually appears
+        ******************************************************************/
+        private void STimer_Elasped(object sender, ElapsedEventArgs e)
+        {
+            vScrollBar1.Visible = (flowLayoutPanel1.VerticalScroll.Visible == true) ? false : true;
+        }
+
+        /*****************************************************************
         Function: ChangeParent
         Trigger: called via different functions
         Where: N/A
@@ -141,35 +163,40 @@ namespace DungeonsAndDragons
         private void CreateTable(string playername)
         {
             TableLayoutPanel PlayerPanel = new TableLayoutPanel();
+            if (TableLayout.Count == 0)
+                PlayerPanel.BackColor = Color_whosturn;
+            else
+                PlayerPanel.BackColor = Color.Transparent;
+
             Label labelname = new Label();
             labelname.Anchor = AnchorStyles.None;
             labelname.Font = new Font("Arial", 8, FontStyle.Bold);
             labelname.Text = playername;
 
-            PictureBox whosturn = new PictureBox();
-            whosturn.Size = new Size(40, 40);
-            whosturn.Tag = "whosturn";
-            if (TableLayout.Count == 0)
-                whosturn.BackgroundImage = Properties.Resources.myturn;
-            else
-                whosturn.BackgroundImage = null;
-            whosturn.BackgroundImageLayout = ImageLayout.Stretch;
+           // PictureBox whosturn = new PictureBox();
+           // whosturn.Size = new Size(40, 40);
+            //whosturn.Tag = "whosturn";
+            //if (TableLayout.Count == 0)
+             //   whosturn.BackgroundImage = Properties.Resources.myturn;
+            //else
+               // whosturn.BackgroundImage = null;
+           // whosturn.BackgroundImageLayout = ImageLayout.Stretch;
 
             PlayerPanel.Tag = "runtimetable";
             PlayerPanel.ColumnCount = 5;
+            PlayerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 80F));
+            PlayerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 80F));
             PlayerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             PlayerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            PlayerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            PlayerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            PlayerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            PlayerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 110F));
             PlayerPanel.Controls.Add(Program.players[Program.players.Count - 1].ReturnAvatar(), 0, 0);
             PlayerPanel.Controls.Add(labelname, 1, 0);
-            PlayerPanel.Controls.Add(whosturn, 4, 0); // add the arrow (whos turn image here)
+           // PlayerPanel.Controls.Add(whosturn, 4, 0); // add the arrow (whos turn image here)
             PlayerPanel.Location = new System.Drawing.Point(0, 0);
             PlayerPanel.Name = playername + "_table";
             PlayerPanel.RowCount = 1;
             PlayerPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 20));
-            PlayerPanel.Size = new System.Drawing.Size(250, 60);
+            PlayerPanel.Size = new System.Drawing.Size(310, 60);
             PlayerPanel.TabIndex = 0;
 
             TableLayout.Add(PlayerPanel);
@@ -179,7 +206,7 @@ namespace DungeonsAndDragons
             CustomPictureBoxCircle returnavatar = new CustomPictureBoxCircle();
             returnavatar.Location = new Point(0, 0);
             returnavatar.Name = "picturebox_" + picturebox_name;
-            returnavatar.Size = new Size(40, 40);
+            returnavatar.Size = new Size(60, 60);
             returnavatar.BackColor = customPictureBoxCircle_playercreation_chosenAvatar.BackColor;
             returnavatar.BackgroundImage = customPictureBoxCircle_playercreation_chosenAvatar.BackgroundImage;
             returnavatar.BackgroundImageLayout = ImageLayout.Stretch;
@@ -207,6 +234,11 @@ namespace DungeonsAndDragons
         private void CreateTableEnemy(string playername)
         {
             TableLayoutPanel PlayerPanel = new TableLayoutPanel();
+            if (TableLayout.Count == 0)
+                PlayerPanel.BackColor = Color_whosturn;
+            else
+                PlayerPanel.BackColor = Color.Transparent;
+
             Label labelname = new Label();
             labelname.Anchor = AnchorStyles.None;
             labelname.Font = new Font("Arial", 8, FontStyle.Bold);
@@ -216,31 +248,31 @@ namespace DungeonsAndDragons
             healthe.Anchor = AnchorStyles.None;
             healthe.Text = Program.enemies[Program.enemies.Count - 1].ReturnHealth().ToString();
 
-            PictureBox whosturn = new PictureBox();
-            whosturn.Size = new Size(40, 40);
-            whosturn.Tag = "whosturn";
-            if (TableLayout.Count == 0)
-                whosturn.BackgroundImage = Properties.Resources.myturn;
-            else
-                whosturn.BackgroundImage = null;
-            whosturn.BackgroundImageLayout = ImageLayout.Stretch;
+           // PictureBox whosturn = new PictureBox();
+           // whosturn.Size = new Size(40, 40);
+           // whosturn.Tag = "whosturn";
+            //if (TableLayout.Count == 0)
+               // whosturn.BackgroundImage = Properties.Resources.myturn;
+           // else
+               // whosturn.BackgroundImage = null;
+            //whosturn.BackgroundImageLayout = ImageLayout.Stretch;
 
             PlayerPanel.Tag = "runtimetable";
             PlayerPanel.ColumnCount = 5;
+            PlayerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 80F));
+            PlayerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 80F));
             PlayerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             PlayerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            PlayerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            PlayerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            PlayerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            PlayerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 110F));
             PlayerPanel.Controls.Add(Program.enemies[Program.enemies.Count - 1].ReturnAvatar(), 0, 0);
             PlayerPanel.Controls.Add(labelname, 1, 0);
             PlayerPanel.Controls.Add(healthe, 2, 0);
-            PlayerPanel.Controls.Add(whosturn, 4, 0); // add the arrow (whos turn image here)
+            //PlayerPanel.Controls.Add(whosturn, 4, 0); // add the arrow (whos turn image here)
             PlayerPanel.Location = new System.Drawing.Point(0, 0);
             PlayerPanel.Name = playername + "_table";
             PlayerPanel.RowCount = 1;
             PlayerPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 20));
-            PlayerPanel.Size = new System.Drawing.Size(250, 60);
+            PlayerPanel.Size = new System.Drawing.Size(310, 60);
             PlayerPanel.TabIndex = 0;
 
            // PlayerPanel.DoubleClick += new EventHandler(Form1.thisFormStatic.changeGameplayListOrder);
@@ -251,7 +283,7 @@ namespace DungeonsAndDragons
             CustomPictureBoxCircle returnavatar = new CustomPictureBoxCircle();
             returnavatar.Location = new Point(0, 0);
             returnavatar.Name = "picturebox_" + picturebox_name;
-            returnavatar.Size = new Size(40, 40);
+            returnavatar.Size = new Size(60, 60);
             returnavatar.BackColor = customPictureBoxCircle_enemycreation_chosenAvatar.BackColor;
             returnavatar.BackgroundImage = customPictureBoxCircle_enemycreation_chosenAvatar.BackgroundImage;
             returnavatar.BackgroundImageLayout = ImageLayout.Stretch;
@@ -770,47 +802,53 @@ namespace DungeonsAndDragons
         private void button_nextturn_Click(object sender, EventArgs e)
         {
             bool whosNext = false;
-            //go through the list of flowlayout panels
-            //check to see where the "active turn" icon is held
-            //then switch it to the index value below
+            int last = flowLayoutPanel1.Controls.Count;
+            Control firstc = flowLayoutPanel1.Controls.OfType<TableLayoutPanel>().FirstOrDefault();
+            int counter = 0;
             foreach (Control C in flowLayoutPanel1.Controls)
             {             
                 try
                 {
                     if (C.Tag.Equals("runtimetable")) //grab the table first
                     {
-                        foreach (Control CC in C.Controls) //grab the contents in the table (picture, & stuff)
+                        counter++;
+                        if(C.BackColor != Color.Transparent)
                         {
-                            if (CC.Tag != null)
-                            {
-                                if (CC.Tag.Equals("whosturn"))
-                                {
-                                    if (CC.BackgroundImage != null)
-                                    {
-                                        CC.BackgroundImage = null;
-                                        whosNext = true;
-                                    }
-                                    else if (whosNext.Equals(true))
-                                    {
-                                        CC.BackgroundImage = Properties.Resources.myturn;
-                                        whosNext = false;
-                                    }
-                                }
-                            }
-                            //check to see if its one of these controls turn
-                            //if cc.control has tag "turn"
-                            //& cc.control background image isnt null
-                            //set it to null and make the next control in the list have the image
-                            //if it is --> 
-
+                            C.BackColor = Color.Transparent;
+                            whosNext = true;
                         }
-                    }
-                    else
-                    {
-                        Console.WriteLine("other");
+                        else if (whosNext.Equals(true))
+                        {
+                            C.BackColor = Color_whosturn;
+                            whosNext = false;
+                        }
+                        /* foreach (Control CC in C.Controls) //grab the contents in the table (picture, & stuff)
+                         {
+                             if (CC.Tag != null)
+                             {
+                                 if (CC.Tag.Equals("whosturn"))
+                                 {
+                                     if (CC.BackgroundImage != null)
+                                     {
+                                         CC.BackgroundImage = null;
+                                         whosNext = true;
+                                     }
+                                     else if (whosNext.Equals(true))
+                                     {
+                                         CC.BackgroundImage = Properties.Resources.myturn;
+                                         whosNext = false;
+                                     }
+                                 }
+                             }
+                         }*/
                     }
                 }   
                 catch { }
+            }
+
+            if ((counter == last) &&(whosNext.Equals(true)))
+            {
+                firstc.BackColor = Color_whosturn;
             }
         }
 

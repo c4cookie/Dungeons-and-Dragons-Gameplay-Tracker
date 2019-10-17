@@ -122,6 +122,7 @@
             this.pictureBox_blank_playercreation2 = new System.Windows.Forms.PictureBox();
             this.pictureBox_charactercreation_background_player = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.customPictureBoxCircle_displaycolor = new DungeonsAndDragons.CustomPictureBoxCircle();
             this.customPictureBoxCircle_enemycreation_chosenAvatar = new DungeonsAndDragons.CustomPictureBoxCircle();
             this.customPictureBoxCircle_playercreation_chosenAvatar = new DungeonsAndDragons.CustomPictureBoxCircle();
@@ -425,6 +426,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.tabPage1.Controls.Add(this.vScrollBar1);
             this.tabPage1.Controls.Add(this.button_nextturn);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.pictureBox1);
@@ -457,9 +459,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(17, 283);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(185, 13);
+            this.label2.Size = new System.Drawing.Size(307, 13);
             this.label2.TabIndex = 43;
-            this.label2.Text = "Avatar       Name       Health        Turn";
+            this.label2.Text = "Avatar          Name           Health             Turn [Highlighted Blue]";
             // 
             // pictureBox1
             // 
@@ -1196,6 +1198,15 @@
             this.pictureBox_charactercreation_background_player.TabIndex = 17;
             this.pictureBox_charactercreation_background_player.TabStop = false;
             // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.vScrollBar1.Enabled = false;
+            this.vScrollBar1.Location = new System.Drawing.Point(324, 303);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(17, 346);
+            this.vScrollBar1.TabIndex = 45;
+            // 
             // customPictureBoxCircle_displaycolor
             // 
             this.customPictureBoxCircle_displaycolor.BackColor = System.Drawing.Color.DarkGray;
@@ -1406,6 +1417,7 @@
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }
 
