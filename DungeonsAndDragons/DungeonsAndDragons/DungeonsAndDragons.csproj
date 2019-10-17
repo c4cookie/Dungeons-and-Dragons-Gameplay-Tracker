@@ -68,6 +68,7 @@
     <Compile Include="Form3_EnemyCreation.Designer.cs">
       <DependentUpon>Form3_EnemyCreation.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyWrapper.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

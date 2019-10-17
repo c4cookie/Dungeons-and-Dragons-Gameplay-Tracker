@@ -199,6 +199,7 @@ namespace DungeonsAndDragons
             PlayerPanel.Size = new System.Drawing.Size(310, 60);
             PlayerPanel.TabIndex = 0;
 
+            PlayerPanel.MouseDown += MyMouseDown;
             TableLayout.Add(PlayerPanel);
         }
         private CustomPictureBoxCircle createAvatarPlayer(string picturebox_name)
@@ -275,7 +276,8 @@ namespace DungeonsAndDragons
             PlayerPanel.Size = new System.Drawing.Size(310, 60);
             PlayerPanel.TabIndex = 0;
 
-           // PlayerPanel.DoubleClick += new EventHandler(Form1.thisFormStatic.changeGameplayListOrder);
+            PlayerPanel.MouseDown += MyMouseDown;
+            // PlayerPanel.DoubleClick += new EventHandler(Form1.thisFormStatic.changeGameplayListOrder);
             TableLayout.Add(PlayerPanel);
         }
         private CustomPictureBoxCircle createAvatarEnemy(string picturebox_name)
@@ -677,6 +679,7 @@ namespace DungeonsAndDragons
         ******************************************************************/
         private void button_enemy_createavatar_Click(object sender, EventArgs e)
         {
+            int maxlength = 15;
             if (textBox_enemy_name.Text.Length > 0)
             {
                 for(int i=0; i <Program.enemies.Count; i++)
@@ -685,7 +688,7 @@ namespace DungeonsAndDragons
                     {
                         listView_display_names_enemy.Items.Add("Oops!, an Enemy with that" +
                             "name already exists");
-                        RemoveEnemyOrPlayerNameOffList(6, listView_display_names_enemy.Items.Count, "enemy");
+                        RemoveEnemyOrPlayerNameOffList(maxlength, listView_display_names_enemy.Items.Count, "enemy");
                         return;
                     }
                 }
@@ -695,7 +698,7 @@ namespace DungeonsAndDragons
                     {
                         listView_display_names_enemy.Items.Add("Oops!, a Player with that" +
                             "name already exists");
-                        RemoveEnemyOrPlayerNameOffList(6, listView_display_names_enemy.Items.Count, "enemy");
+                        RemoveEnemyOrPlayerNameOffList(maxlength, listView_display_names_enemy.Items.Count, "enemy");
                         return;
                     }
                 }
@@ -711,7 +714,7 @@ namespace DungeonsAndDragons
                 listView_display_names_enemy.Items.Add("Oops!, name cannot be blank");
             }
 
-            RemoveEnemyOrPlayerNameOffList(6, listView_display_names_enemy.Items.Count, "enemy");
+            RemoveEnemyOrPlayerNameOffList(maxlength, listView_display_names_enemy.Items.Count, "enemy");
         }
 
         /*****************************************************************
@@ -722,6 +725,7 @@ namespace DungeonsAndDragons
         ******************************************************************/
         private void button_player_create_Click(object sender, EventArgs e)
         {
+            int maxlength = 15;
             if (textBox_player_name.Text.Length > 0)
             {
                 for (int i = 0; i < Program.enemies.Count; i++)
@@ -730,7 +734,7 @@ namespace DungeonsAndDragons
                     {
                         listView_display_names_player.Items.Add("Oops!, an Enemy with that" +
                             "name already exists");
-                        RemoveEnemyOrPlayerNameOffList(6, listView_display_names_player.Items.Count, "player");
+                        RemoveEnemyOrPlayerNameOffList(maxlength, listView_display_names_player.Items.Count, "player");
                         return;
                     }
                 }
@@ -740,7 +744,7 @@ namespace DungeonsAndDragons
                     {
                         listView_display_names_player.Items.Add("Oops!, a Player with that" +
                             "name already exists");
-                        RemoveEnemyOrPlayerNameOffList(6, listView_display_names_player.Items.Count, "player");
+                        RemoveEnemyOrPlayerNameOffList(maxlength, listView_display_names_player.Items.Count, "player");
                         return;
                     }
                 }
@@ -755,7 +759,7 @@ namespace DungeonsAndDragons
                 listView_display_names_player.Items.Add("Oops!, name cannot be blank");
             }
 
-            RemoveEnemyOrPlayerNameOffList(6, listView_display_names_player.Items.Count, "player");
+            RemoveEnemyOrPlayerNameOffList(maxlength, listView_display_names_player.Items.Count, "player");
         }
 
         /*****************************************************************
@@ -853,11 +857,33 @@ namespace DungeonsAndDragons
         }
 
 
-        private void changeGameplayListOrder(object sender, EventArgs e)
+        private void MyMouseDown(object sender, MouseEventArgs e)
         {
-            //dont really need this, adds a border cell when double clicked
-            TableLayoutPanel t = (TableLayoutPanel)sender;
-            t.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
+            Control source = (Control)sender;
+            source.DoDragDrop(new MyWrapper(source), DragDropEffects.Move);
+        }
+
+        private void flowLayoutPanel1_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(typeof(MyWrapper)))
+                e.Effect = DragDropEffects.Move;
+            else
+                e.Effect = DragDropEffects.None;
+        }
+
+        private void flowLayoutPanel1_DragDrop(object sender, DragEventArgs e)
+        {
+            MyWrapper wrapper = (MyWrapper)e.Data.GetData(typeof(MyWrapper));
+            Control source = wrapper.Control;
+
+            Point mousePosition = flowLayoutPanel1.PointToClient(new Point(e.X, e.Y));
+            Control destination = flowLayoutPanel1.GetChildAtPoint(mousePosition);
+
+            int indexDestination = flowLayoutPanel1.Controls.IndexOf(destination);
+            if (flowLayoutPanel1.Controls.IndexOf(source) < indexDestination)
+                indexDestination--;
+
+            flowLayoutPanel1.Controls.SetChildIndex(source, indexDestination);
         }
 
 
