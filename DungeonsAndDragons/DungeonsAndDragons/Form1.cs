@@ -198,7 +198,7 @@ namespace DungeonsAndDragons
             PlayerPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 20));
             PlayerPanel.Size = new System.Drawing.Size(310, 60);
             PlayerPanel.TabIndex = 0;
-
+           
             PlayerPanel.MouseDown += MyMouseDown;
             TableLayout.Add(PlayerPanel);
         }
@@ -826,25 +826,6 @@ namespace DungeonsAndDragons
                             C.BackColor = Color_whosturn;
                             whosNext = false;
                         }
-                        /* foreach (Control CC in C.Controls) //grab the contents in the table (picture, & stuff)
-                         {
-                             if (CC.Tag != null)
-                             {
-                                 if (CC.Tag.Equals("whosturn"))
-                                 {
-                                     if (CC.BackgroundImage != null)
-                                     {
-                                         CC.BackgroundImage = null;
-                                         whosNext = true;
-                                     }
-                                     else if (whosNext.Equals(true))
-                                     {
-                                         CC.BackgroundImage = Properties.Resources.myturn;
-                                         whosNext = false;
-                                     }
-                                 }
-                             }
-                         }*/
                     }
                 }   
                 catch { }
@@ -856,7 +837,15 @@ namespace DungeonsAndDragons
             }
         }
 
-
+        /*****************************************************************
+        Functions: MyMouseDown
+                   flowLayoutPanel1_DragEnter
+                   flowLayoutPanel1_DragDrop
+        Trigger: when user drags and drops a table in the flowlayoutpanel list 
+        Where: main page (flowlayoutpanel)
+        Result: moves the tables position in the layout panel to a different
+                position
+        ******************************************************************/
         private void MyMouseDown(object sender, MouseEventArgs e)
         {
             Control source = (Control)sender;
@@ -865,16 +854,21 @@ namespace DungeonsAndDragons
 
         private void flowLayoutPanel1_DragEnter(object sender, DragEventArgs e)
         {
+           // MyWrapper wrapper = (MyWrapper)e.Data.GetData(typeof(MyWrapper));//
+            //Control source = wrapper.Control;//
+            //source.Visible = false;//
+
             if (e.Data.GetDataPresent(typeof(MyWrapper)))
                 e.Effect = DragDropEffects.Move;
             else
                 e.Effect = DragDropEffects.None;
         }
-
         private void flowLayoutPanel1_DragDrop(object sender, DragEventArgs e)
         {
             MyWrapper wrapper = (MyWrapper)e.Data.GetData(typeof(MyWrapper));
             Control source = wrapper.Control;
+           // source.Visible = true;//
+            //source = the object
 
             Point mousePosition = flowLayoutPanel1.PointToClient(new Point(e.X, e.Y));
             Control destination = flowLayoutPanel1.GetChildAtPoint(mousePosition);
