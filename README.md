@@ -1,4 +1,9 @@
 # Dungeons-and-Dragons-Gameplay-Tracker
-- Requires visual studio 2017 and up.
-- Requires c# winforms
+Requirments:
+- Visual Studio 2017
+- C# Winforms Builder
+
+<img src="readmeImages/d&dpic.png" width="100" height="100">
+
+
 
