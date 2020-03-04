@@ -3,8 +3,19 @@ Requirments:
 - Visual Studio 2017
 - C# Winforms Builder
 
-Add your players and enemies, assign an avatar, re-order your gameplay list by dragging and dropping, double tap your avatars to add them onto the gameplay field and resize your gameboard through the setting area.
-Now get ready to draw your D&D map using the custom made color wheel in the top left of the application, choose your color and draw.
+A C# Winforms application designed for a digital form of d&d gameplay tracking
+
+<b>How To Use</b>
+- Add players and enemies from the options drop down menu
+- Re-arrange the order of your players and enemies by holding and dragging the avatar by the far right hand side of the list
+- Double click on the avatar image in the list to add it to the gameplay field
+- Hover your mouse over the avatar on the gameplay field for it to display the avatars name
+
+
+<b>Key Features</b>
+- Custom coded drag and drop system for moving the players up and down the list. (By default, winforms does not have this built in)
+- Custom coded color wheel (windows default color selection is terrible)
+
 
 <img src="readmeImages/d%26dpic.PNG" width="600" height="400">
 
