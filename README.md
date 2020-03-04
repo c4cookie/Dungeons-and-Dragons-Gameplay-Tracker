@@ -12,7 +12,7 @@ Now get ready to draw your D&D map using the custom made color wheel in the top 
 
 <img src="readmeImages/screenshot_enemycreation.PNG" width="600" height="400">
 
-
+Download the .exe <a href="DungeonsAndDragons.zip" download>Here</a>
 Note: 
 - I do not own the rights to any of the images used. Images were sourced from https://www.hiclipart.com/ royalty free.
 - This application is only in aplha stage, its not finished and is a work in progress, bugs may occur.
