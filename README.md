@@ -20,6 +20,7 @@ A C# Winforms application designed for a digital form of d&d gameplay tracking
 <b>Key Features</b>
 - Custom coded drag and drop system for moving the players up and down the list. (By default, winforms does not have this built in)
 - Custom coded color wheel (windows default color selection is terrible)
+- Snap to grid
 
 
 <img src="readmeImages/d%26dpic.PNG" width="600" height="400">
