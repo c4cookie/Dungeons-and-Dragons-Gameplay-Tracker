@@ -3,7 +3,7 @@
 A C# Winforms application designed for a digital form of d&d gameplay tracking
 
 
-<b>Requirments</b>
+<b>Requirements</b>
 - Visual Studio 2017
 - C# Winforms Builder
 
