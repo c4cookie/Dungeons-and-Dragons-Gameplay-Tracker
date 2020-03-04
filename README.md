@@ -1,15 +1,20 @@
 # Dungeons-and-Dragons-Gameplay-Tracker
-Requirments:
+
+A C# Winforms application designed for a digital form of d&d gameplay tracking
+
+
+<b>Requirments</b>
 - Visual Studio 2017
 - C# Winforms Builder
 
-A C# Winforms application designed for a digital form of d&d gameplay tracking
+
 
 <b>How To Use</b>
 - Add players and enemies from the options drop down menu
 - Re-arrange the order of your players and enemies by holding and dragging the avatar by the far right hand side of the list
 - Double click on the avatar image in the list to add it to the gameplay field
 - Hover your mouse over the avatar on the gameplay field for it to display the avatars name
+
 
 
 <b>Key Features</b>
