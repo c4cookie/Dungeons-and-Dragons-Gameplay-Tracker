@@ -5,6 +5,8 @@ Requirments:
 
 <img src="readmeImages/d%26dpic.PNG" width="600" height="400">
 
+<img src="readmeImages/DrawingEg.PNG" width="600" height="400">
+
 <img src="readmeImages/screenshot_enemycreation.PNG" width="600" height="400">
 
 
