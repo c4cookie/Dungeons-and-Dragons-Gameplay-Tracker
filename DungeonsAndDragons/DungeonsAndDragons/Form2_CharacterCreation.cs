@@ -24,10 +24,6 @@ namespace DungeonsAndDragons
             SetValues(mainForm);
         }
 
-        /*****************************************************************
-        Function: Private void SetValues
-        Description: Initializes local variables
-        ******************************************************************/
         private void SetValues(Form mainForm)
         {
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -40,10 +36,6 @@ namespace DungeonsAndDragons
             this.mainForm = mainForm;
         }
 
-        /*****************************************************************
-        Function: Private void Form2_CharacterCreation_FormClosing
-        Description: When the form is closing, enable main form again
-        ******************************************************************/
         private void Form2_CharacterCreation_FormClosing(object sender, FormClosingEventArgs e)
         {
             textBox_name.Text = "";
@@ -51,7 +43,6 @@ namespace DungeonsAndDragons
         }
 
         /*****************************************************************
-        Function: Private void button1_Click
         Description: Creates a character
         ******************************************************************/
         private void button1_Click(object sender, EventArgs e)
@@ -81,7 +72,6 @@ namespace DungeonsAndDragons
 
 
         /*****************************************************************
-        Function: Private void pictureBox1_MouseMove
         Description: when user moves mouse around the color pallet, assign
         the color to the little box in the top right
         ******************************************************************/
@@ -99,7 +89,6 @@ namespace DungeonsAndDragons
         }
 
         /*****************************************************************
-        Function: Private void pictureBox1_MouseLeave
         Description: when users mouse leaves the color pallet, assign
         avatar color back to selected color
         ******************************************************************/
@@ -109,7 +98,6 @@ namespace DungeonsAndDragons
         }
 
         /*****************************************************************
-        Function: Private void pictureBox1_Click
         Description: when user clicks on color pallet, assign selected color
         ******************************************************************/
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -118,7 +106,6 @@ namespace DungeonsAndDragons
         }
 
         /*****************************************************************
-        Function: Private void picturebox_click
         Description: when a user clicks on a picture box, assign
         its background image to the main avatar
         ******************************************************************/
