@@ -59,12 +59,6 @@ namespace DungeonsAndDragons
             ChangeParent(label2, pictureBox1);
         }
 
-        /*****************************************************************
-        Function: SetValues
-        Trigger: application startup
-        Where: N/A
-        Result: sets initial values
-        ******************************************************************/
         private void SetValues()
         {
             //Used for fake scrollbar
@@ -121,23 +115,13 @@ namespace DungeonsAndDragons
         }
 
         /*****************************************************************
-        Function: STimer_Elasped
-        Trigger: N/A
-        Where: N/A
-        Result: shows a fake scrollbar inplace on the flowlayout panel until
-                the scrollbar actually appears
+        shows a fake scrollbar inplace on the flowlayout panel until the scrollbar actually appears
         ******************************************************************/
         private void STimer_Elasped(object sender, ElapsedEventArgs e)
         {
             vScrollBar1.Visible = (flowLayoutPanel1.VerticalScroll.Visible == true) ? false : true;
         }
 
-        /*****************************************************************
-        Function: ChangeParent
-        Trigger: called via different functions
-        Where: N/A
-        Result: Changes the objects parent without moving its position to 0.0
-        ******************************************************************/
         void ChangeParent(Control child, Control newParent)
         {
             child.Location = newParent.PointToClient(child.PointToScreen(Point.Empty));
@@ -145,11 +129,6 @@ namespace DungeonsAndDragons
         }
 
         /*****************************************************************
-        Functions: AddPlayer
-                   CreateTable
-                   CreateAvatarPlayer
-        Trigger: called via different functions
-        Where: N/A
         Result: AddPlayer function called, creates a table for this player
                 selecting its avatar, name and health
                 then adds it to the layout list on the main page.
@@ -172,16 +151,7 @@ namespace DungeonsAndDragons
             labelname.Anchor = AnchorStyles.None;
             labelname.Font = new Font("Arial", 8, FontStyle.Bold);
             labelname.Text = playername;
-
-           // PictureBox whosturn = new PictureBox();
-           // whosturn.Size = new Size(40, 40);
-            //whosturn.Tag = "whosturn";
-            //if (TableLayout.Count == 0)
-             //   whosturn.BackgroundImage = Properties.Resources.myturn;
-            //else
-               // whosturn.BackgroundImage = null;
-           // whosturn.BackgroundImageLayout = ImageLayout.Stretch;
-
+         
             PlayerPanel.Tag = "runtimetable";
             PlayerPanel.ColumnCount = 5;
             PlayerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 80F));
@@ -217,11 +187,6 @@ namespace DungeonsAndDragons
         }
 
         /*****************************************************************
-        Functions: AddEnemy
-                   CreateTableEnemy
-                   createAvatarEnemy
-        Trigger: called via different functions
-        Where: N/A
         Result: AddEnemy function called, creates a table for this enemy
                 selecting its avatar, name and health
                 then adds it to the layout list on the main page.
@@ -248,15 +213,6 @@ namespace DungeonsAndDragons
             TextBox healthe = new TextBox();
             healthe.Anchor = AnchorStyles.None;
             healthe.Text = Program.enemies[Program.enemies.Count - 1].ReturnHealth().ToString();
-
-           // PictureBox whosturn = new PictureBox();
-           // whosturn.Size = new Size(40, 40);
-           // whosturn.Tag = "whosturn";
-            //if (TableLayout.Count == 0)
-               // whosturn.BackgroundImage = Properties.Resources.myturn;
-           // else
-               // whosturn.BackgroundImage = null;
-            //whosturn.BackgroundImageLayout = ImageLayout.Stretch;
 
             PlayerPanel.Tag = "runtimetable";
             PlayerPanel.ColumnCount = 5;
@@ -295,9 +251,6 @@ namespace DungeonsAndDragons
         }
 
         /*****************************************************************
-        Function: GetPictureBoxClone
-        Trigger: called via different functions
-        Where: N/A
         Result: creates a copy of a circle picturebox and 'clones it'
         ******************************************************************/
         private CustomPictureBoxCircle GetPictureBoxClone(CustomPictureBoxCircle origionalp)
