@@ -13,9 +13,6 @@ namespace DungeonsAndDragons
         {
         }
 
-        /**********************************************
-        Controls the sizing of the grid
-        **********************************************/
         public string returnGridSize(int selectedScroll)
         {
             switch (selectedScroll)
@@ -39,9 +36,6 @@ namespace DungeonsAndDragons
             }
         }
 
-        /************************************************
-        Snaps the players x position based on grid size
-        ************************************************/
         public int returnSnapToGridSpacingX(int selectedScroll)
         {
             switch (selectedScroll)
@@ -65,9 +59,6 @@ namespace DungeonsAndDragons
             }
         }
 
-        /************************************************
-         Snaps the players y position based on grid size
-        ************************************************/
         public int returnSnapToGridSpacingY(int selectedScroll)
         {
             switch (selectedScroll)
@@ -91,9 +82,6 @@ namespace DungeonsAndDragons
             }
         }
 
-        /************************************************
-         Size the avatar based on grid size
-        ************************************************/
         public Size returnAvatarSize(int selectedScroll)
         {
             switch (selectedScroll)
